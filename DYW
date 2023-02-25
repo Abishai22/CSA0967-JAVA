@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class DYW
+{
+public static void main(String[] args)
+{
+int days, years, weeks;
+Scanner op=new Scanner(System.in);
+System.out.println(" Enter days ");
+days=op.nextInt();
+years = ( days / 365 );
+weeks = ( days % 365 );
+days = days - (( years * 365 ) + ( weeks * 7 ));
+System.out.println(" YEARS: "+years );
+System.out.println(" WEEKS: "+weeks );
+System.out.println(" DAYS: "+days );
+}
+}
